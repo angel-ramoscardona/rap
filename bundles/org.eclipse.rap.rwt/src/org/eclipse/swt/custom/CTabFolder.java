@@ -2371,6 +2371,11 @@ CTabItem[] items = itemHolder.getItems();
     }
   }
 
+
+  public void setSimple( boolean simple ) {
+    return;
+  }
+
   //////////////////
   // Theming related
 
@@ -2477,7 +2482,6 @@ CTabItem[] items = itemHolder.getItems();
     public IWidgetGraphicsAdapter getUserSelectionBackgroundGradient() {
       return selectionGraphicsAdapter;
     }
-
   }
 
 }
