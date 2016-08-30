@@ -530,6 +530,8 @@ public class SWT {
    */
   public static final int Skin = 45;
 
+  public static final int OpenDocument = 46;
+
   /**
    * Indicates that a user-interface component is being dragged,
    * for example dragging the thumb of a scroll bar (value is 1).
@@ -3273,6 +3275,9 @@ public class SWT {
    */
   public static final int ERROR_INVALID_RETURN_VALUE = 51;
 
+  public static final int BITMAP = 0;
+  public static final int ICON = 1;
+
   /**
    * The <code>Image</code> constructor argument indicating that
    * the new image should be a copy of the image provided as
@@ -3575,6 +3580,13 @@ public class SWT {
    * @since 1.4
    */
   public static final int ID_QUIT = -6;
+
+  public static final int LINE_SOLID = 1;
+  public static final int LINE_DASH = 2;
+  public static final int LINE_DOT = 3;
+  public static final int LINE_DASHDOT = 4;
+  public static final int LINE_DASHDOTDOT = 5;
+  public static final int LINE_CUSTOM = 6;
 
   private static final int RWT_VERSION = readVersion();
 
