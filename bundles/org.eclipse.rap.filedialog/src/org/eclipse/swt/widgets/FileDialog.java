@@ -554,7 +554,25 @@ public class FileDialog extends Dialog {
         setButtonEnabled( true );
       }
     }
-
   }
 
+  public String getFilterPath() {
+    return "";
+  }
+
+  public void setFilterPath( String filterPath ) {
+    return;
+  }
+
+  public void setFilterNames( String[] filterNames ) {
+    return;
+  }
+
+  public void setFileName( String fileName ) {
+    return;
+  }
+
+  public void setFilterExtensions( String[] filterExtensions ) {
+    return;
+  }
 }
