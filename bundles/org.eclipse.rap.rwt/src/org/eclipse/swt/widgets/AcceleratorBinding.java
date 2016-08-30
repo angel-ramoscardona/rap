@@ -64,7 +64,9 @@ class AcceleratorBinding implements Listener {
         if( event.character == 0 ) {
           result = event.keyCode == key;
         } else {
-          result = toUpperCase( event.character ) == toUpperCase( ( char )key );
+          if ( key <= Character.MAX_VALUE ) {
+            result = toUpperCase( event.character ) == toUpperCase( ( char )key );
+          }
         }
       }
     }
@@ -164,6 +166,9 @@ class AcceleratorBinding implements Listener {
         break;
       case SWT.END:
         result = "END";
+        break;
+      case SWT.ESC:
+        result = "ESC";
         break;
       case SWT.ARROW_UP:
         result = "ARROW_UP";
