@@ -8,18 +8,14 @@
  * Contributors:
  *    Hitachi America, Ltd., R&D - initial API and implementation
  ******************************************************************************/
-package org.eclipse.swt.widgets;
+package org.eclipse.swt.program;
 
 
-public class DirectoryDialog extends FileDialog {
+public class Program {
 
-  public DirectoryDialog( Shell parent ) {
-    super( parent );
+  public Program() { }
+
+  public static boolean launch( String fileName ) {
+    return true;
   }
-
-  public DirectoryDialog( Shell parent, int style ) {
-    super( parent, style);
-  }
-
-  public void setMessage( String string ) { }
 }

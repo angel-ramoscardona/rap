@@ -33,6 +33,7 @@ import org.eclipse.swt.events.HelpListener;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.MenuDetectListener;
 import org.eclipse.swt.events.MouseListener;
+import org.eclipse.swt.events.MouseMoveListener;
 import org.eclipse.swt.events.PaintListener;
 import org.eclipse.swt.events.TouchListener;
 import org.eclipse.swt.events.TraverseListener;
@@ -2718,4 +2719,8 @@ public abstract class Control extends Widget implements Drawable {
     return ( ControlRemoteAdapter )getAdapter( RemoteAdapter.class );
   }
 
+  public void addPaintListener( PaintListener listener ) {  }
+  public void removePaintListener( PaintListener listener ) {  }
+  public void addMouseMoveListener( MouseMoveListener listener ) {  }
+  public void removeMouseMoveListener( MouseMoveListener listener ) {  }
 }
