@@ -70,13 +70,20 @@ public class StyledText extends Text {
    * Empty stub
    */
   public void setStyleRange( StyleRange style ) {
-    
+
   }
 
   /*
    * Empty stub
    */
   public void setStyleRanges( StyleRange[] styles ) {
-    
+
+  }
+
+  /*
+   * Empty stub
+   */
+  public void addLineStyleListener( LineStyleListener listener ) {
+
   }
 }
