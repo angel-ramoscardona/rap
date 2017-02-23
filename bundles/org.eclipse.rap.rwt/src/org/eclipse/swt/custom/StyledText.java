@@ -65,4 +65,18 @@ public class StyledText extends Text {
       + text
       + getText().substring( start + length ) );
   }
+
+  /*
+   * Empty stub
+   */
+  public void setStyleRange( StyleRange style ) {
+    
+  }
+
+  /*
+   * Empty stub
+   */
+  public void setStyleRanges( StyleRange[] styles ) {
+    
+  }
 }
