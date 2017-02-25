@@ -72,8 +72,8 @@ rwt.qx.Class.define( "rwt.widgets.Browser", {
           if( pathStart !== -1 ) {
             domain = domain.slice( 0, pathStart );
           }
-          if( domain.indexOf( ":" ) === -1 ) {
-            domain += ":" + defaultPort;
+          if( domain.indexOf( ":" ) !== -1 ) { // Do not care port
+            domain = domain.slice( 0, domain.indexOf( ":" ) );
           }
         }
       }
