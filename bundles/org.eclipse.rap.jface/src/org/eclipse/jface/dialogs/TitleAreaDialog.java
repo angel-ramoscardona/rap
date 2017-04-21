@@ -231,23 +231,23 @@ public class TitleAreaDialog extends TrayDialog {
 		final int verticalSpacing = convertVerticalDLUsToPixels(IDialogConstants.VERTICAL_SPACING);
 		final int horizontalSpacing = convertHorizontalDLUsToPixels(IDialogConstants.HORIZONTAL_SPACING);
 		// Dialog image @ right
-		titleImageLabel = new Label(parent, SWT.CENTER);
-		titleImageLabel.setBackground(background);
-		if (titleAreaImage == null)
-			titleImageLabel.setImage(JFaceResources
-					.getImage(DLG_IMG_TITLE_BANNER));
-		else
-			titleImageLabel.setImage(titleAreaImage);
-
-		FormData imageData = new FormData();
-		imageData.top = new FormAttachment(0, 0);
-		// Note: do not use horizontalSpacing on the right as that would be a
-		// regression from
-		// the R2.x style where there was no margin on the right and images are
-		// flush to the right
-		// hand side. see reopened comments in 41172
-		imageData.right = new FormAttachment(100, 0); // horizontalSpacing
-		titleImageLabel.setLayoutData(imageData);
+//		titleImageLabel = new Label(parent, SWT.CENTER);
+//		titleImageLabel.setBackground(background);
+//		if (titleAreaImage == null)
+//			titleImageLabel.setImage(JFaceResources
+//					.getImage(DLG_IMG_TITLE_BANNER));
+//		else
+//			titleImageLabel.setImage(titleAreaImage);
+//
+//		FormData imageData = new FormData();
+//		imageData.top = new FormAttachment(0, 0);
+//		// Note: do not use horizontalSpacing on the right as that would be a
+//		// regression from
+//		// the R2.x style where there was no margin on the right and images are
+//		// flush to the right
+//		// hand side. see reopened comments in 41172
+//		imageData.right = new FormAttachment(100, 0); // horizontalSpacing
+//		titleImageLabel.setLayoutData(imageData);
 		// Title label @ top, left
 		titleLabel = new Label(parent, SWT.LEFT);
 		JFaceColors.setColors(titleLabel, foreground, background);
@@ -283,7 +283,7 @@ public class TitleAreaDialog extends TrayDialog {
 		bottomFillerLabel = new Label(parent, SWT.CENTER);
 		bottomFillerLabel.setBackground(background);
 		setLayoutsForNormalMessage(verticalSpacing, horizontalSpacing);
-		determineTitleImageLargest();
+//		determineTitleImageLargest();
 		if (titleImageLargest)
 			return titleImageLabel;
 		return messageLabel;
