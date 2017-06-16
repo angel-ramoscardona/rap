@@ -80,7 +80,7 @@ import org.eclipse.swt.layout.GridLayout;
  *      information</a>
  */
 @SuppressWarnings( "restriction" )
-public class FileDialog extends Dialog {
+public class UploadDialog extends Dialog {
 
   private static final String[] EMPTY_ARRAY = new String[ 0 ];
 
@@ -108,7 +108,7 @@ public class FileDialog extends Dialog {
    *              subclass</li>
    *              </ul>
    */
-  public FileDialog( Shell parent ) {
+  public UploadDialog( Shell parent ) {
     this( parent, SWT.TITLE | SWT.BORDER | SWT.APPLICATION_MODAL );
   }
 
@@ -136,7 +136,7 @@ public class FileDialog extends Dialog {
    *              subclass</li>
    *              </ul>
    */
-  public FileDialog( Shell parent, int style ) {
+  public UploadDialog( Shell parent, int style ) {
     super( parent, checkStyle( parent, style ) );
     checkSubclass();
     pushSession = new ServerPushSession();
