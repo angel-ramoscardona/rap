@@ -80,7 +80,7 @@ import org.eclipse.swt.layout.GridLayout;
  *      information</a>
  */
 @SuppressWarnings( "restriction" )
-public class UploadDialog extends Dialog {
+public class UploadDialog extends Dialog implements IFileDialog {
 
   private static final String[] EMPTY_ARRAY = new String[ 0 ];
 
