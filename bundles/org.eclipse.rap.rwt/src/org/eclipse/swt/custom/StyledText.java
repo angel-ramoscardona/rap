@@ -86,4 +86,9 @@ public class StyledText extends Text {
   public void addLineStyleListener( LineStyleListener listener ) {
 
   }
+
+  public int getLineAtOffset( int iOffset ) {
+    String beforeOffset = getText().substring( 0, iOffset );
+    return beforeOffset.length() - beforeOffset.replace( DELIMITER, "" ).length();
+  }
 }
