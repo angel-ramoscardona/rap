@@ -91,4 +91,22 @@ public class StyledText extends Text {
     String beforeOffset = getText().substring( 0, iOffset );
     return beforeOffset.length() - beforeOffset.replace( DELIMITER, "" ).length();
   }
+
+  /**
+   * Return getLineHeight() no matter what offset is given.
+   * @param offset
+   * @return
+   */
+  public int getLineHeight( int offset ) {
+    return getLineHeight();
+  }
+
+  /**
+   * Return getLocation() no matter what offset is given for the sake of single-sourcing.
+   * @param offset
+   * @return
+   */
+  public Point getLocationAtOffset( int offset ) {
+    return getLocation();
+  }
 }
