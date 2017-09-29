@@ -34,6 +34,7 @@ import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.MenuDetectListener;
 import org.eclipse.swt.events.MouseListener;
 import org.eclipse.swt.events.MouseMoveListener;
+import org.eclipse.swt.events.MouseTrackListener;
 import org.eclipse.swt.events.PaintListener;
 import org.eclipse.swt.events.TouchListener;
 import org.eclipse.swt.events.TraverseListener;
@@ -1631,6 +1632,13 @@ public abstract class Control extends Widget implements Drawable {
     addListener( SWT.MouseDown, typedListener );
     addListener( SWT.MouseUp, typedListener );
     addListener( SWT.MouseDoubleClick, typedListener );
+  }
+
+  /**
+   * Empty stub for the sake of single sourcing
+   * @param listener
+   */
+  public void addMouseTrackListener ( MouseTrackListener listener ) {
   }
 
   /**
