@@ -73,6 +73,14 @@ public class StyledText extends Text {
 
   }
 
+  /**
+   * Empty stub
+   * @param ranges
+   * @param styles
+   */
+  public void setStyleRanges(int[] ranges, StyleRange[] styles) {
+  }
+
   /*
    * Empty stub
    */
