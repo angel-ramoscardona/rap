@@ -64,7 +64,9 @@ class AcceleratorBinding implements Listener {
         if( event.character == 0 ) {
           result = event.keyCode == key;
         } else {
-          result = toUpperCase( event.character ) == toUpperCase( ( char )key );
+          if ( key <= Character.MAX_VALUE ) {
+            result = toUpperCase( event.character ) == toUpperCase( ( char )key );
+          }
         }
       }
     }

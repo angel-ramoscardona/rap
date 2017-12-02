@@ -238,6 +238,23 @@ public class AcceleratorBinding_Test {
   }
 
   @Test
+  public void testKeyDownEvent_triggersHandleAcceleratorActivation_withSpecialInAccelerator2() {
+    acceleratorSupport.setAccelerator( SWT.ALT | SWT.F4 );
+    when( Boolean.valueOf( menuItem.isEnabled() ) ).thenReturn( Boolean.TRUE );
+
+    display.sendEvent( SWT.KeyDown, mockKeyDownEvent( SWT.ALT, SWT.F4 ) );
+
+    // Check Enter (CR) does not match F4
+    Event event = mock( Event.class );
+    event.stateMask = 0;
+    event.keyCode = 13;
+    event.character = '\r';
+    display.sendEvent( SWT.KeyDown, event );
+
+    verify( menuItem ).handleAcceleratorActivation();
+  }
+
+  @Test
   public void testKeyDownEvent_triggersHandleAcceleratorActivation_withPunctuationInAccelerator() {
     acceleratorSupport.setAccelerator( SWT.ALT | '.' );
     when( Boolean.valueOf( menuItem.isEnabled() ) ).thenReturn( Boolean.TRUE );
