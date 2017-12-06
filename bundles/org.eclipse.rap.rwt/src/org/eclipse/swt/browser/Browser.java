@@ -769,4 +769,19 @@ public class Browser extends Composite {
     }
   }
 
+  public boolean isBackEnabled () {
+    return false;
+  }
+
+  public boolean isForwardEnabled () {
+    return false;
+  }
+
+  public boolean back () {
+    return false;
+  }
+
+  public boolean forward () {
+    return false;
+  }
 }
