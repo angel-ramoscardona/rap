@@ -676,7 +676,4 @@ public class UploadDialog extends Dialog implements IFileDialog {
     return;
   }
 
-  public void setFilterExtensions( String[] filterExtensions ) {
-    return;
-  }
 }
