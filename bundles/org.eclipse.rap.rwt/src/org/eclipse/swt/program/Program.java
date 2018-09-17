@@ -10,12 +10,21 @@
  ******************************************************************************/
 package org.eclipse.swt.program;
 
+import org.eclipse.rap.rwt.RWT;
+import org.eclipse.rap.rwt.client.service.UrlLauncher;
 
 public class Program {
+  static final String PREFIX_HTTP = "http://"; //$NON-NLS-1$
+  static final String PREFIX_HTTPS = "https://"; //$NON-NLS-1$
 
   public Program() { }
 
   public static boolean launch( String fileName ) {
-    return true;
+    if ( fileName.startsWith( PREFIX_HTTP ) || fileName.startsWith( PREFIX_HTTPS ) ) {
+      UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
+      launcher.openURL( fileName );
+      return true;
+    }
+    return false;
   }
 }
