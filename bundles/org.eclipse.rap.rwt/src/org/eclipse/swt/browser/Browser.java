@@ -784,4 +784,7 @@ public class Browser extends Composite {
   public boolean forward () {
     return false;
   }
+
+  public void refresh () {
+  }
 }
