@@ -11,6 +11,7 @@
 package org.eclipse.swt.custom;
 
 import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.widgets.Caret;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
 
@@ -116,5 +117,11 @@ public class StyledText extends Text {
    */
   public Point getLocationAtOffset( int offset ) {
     return getLocation();
+  }
+
+  /*
+   * Empty stub
+   */
+  public void setCaret( Caret caret ) {
   }
 }
