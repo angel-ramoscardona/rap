@@ -176,7 +176,7 @@ rwt.qx.Class.define( "rwt.widgets.Browser", {
       }
       var accessible = false;
       try {
-        var src = this.getSource() || "";
+        var src = this.getSource().split("?")[0] || "";
         if( src.indexOf( "://" ) === -1 ) { // relative path?
           src = document.URL; // works since we only check that the domain matches
         }
