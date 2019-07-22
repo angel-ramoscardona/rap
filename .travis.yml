@@ -29,7 +29,7 @@ deploy:
     - tests/org.eclipse.rap.rwt.testfixture/target/org.eclipse.rap.rwt.testfixture-*.jar
   skip_cleanup: true
   on:
-    branch: webspoon-3.7.0
+    branch: webspoon-3.9.0
   name: webSpoon/nightly
   body: Auto-build of $TRAVIS_BRANCH ($TRAVIS_COMMIT) by Travis CI on $(date +'%F %T %Z').
   prerelease: true
