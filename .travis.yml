@@ -26,7 +26,6 @@ deploy:
     - bundles/org.eclipse.rap.fileupload/target/org.eclipse.rap.fileupload-*.jar
     - bundles/org.eclipse.rap.filedialog/target/org.eclipse.rap.filedialog-*.jar
     - tests/org.eclipse.rap.rwt.testfixture/target/org.eclipse.rap.rwt.testfixture-*.jar
-  skip_cleanup: true
   on:
     branch: webspoon-3.11.0
   name: webSpoon/nightly
