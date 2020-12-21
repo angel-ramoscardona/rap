@@ -3,7 +3,11 @@
 
 name: Java CI with Maven
 
-on: [push, pull_request]
+on:
+  push:
+    branches: hop-*
+  pull_request:
+    branches: hop-*
 
 jobs:
   build:
@@ -27,4 +31,9 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package
+    - name: Publish
+      if: startsWith(github.ref, 'refs/heads/hop-')
+      run: mvn -B deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
