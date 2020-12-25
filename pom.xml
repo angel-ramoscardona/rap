@@ -23,9 +23,6 @@
 
   <modules>
     <!-- Runtime projects -->
-    <module>bundles/org.eclipse.rap.filedialog</module>
-    <module>bundles/org.eclipse.rap.fileupload</module>
-    <module>bundles/org.eclipse.rap.jface</module>
     <module>bundles/org.eclipse.rap.rwt</module>
     <module>tests/org.eclipse.rap.rwt.testfixture</module>
     <!-- Builder projects -->
