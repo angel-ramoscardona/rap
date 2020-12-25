@@ -2372,11 +2372,6 @@ CTabItem[] items = itemHolder.getItems();
     }
   }
 
-
-  public void setSimple( boolean simple ) {
-    return;
-  }
-
   //////////////////
   // Theming related
 
