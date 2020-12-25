@@ -397,10 +397,6 @@ public class Browser extends Composite {
     evaluateNonBlocking( script, browserCallback );
   }
 
-  public void addOpenWindowListener( OpenWindowListener listener ) {  }
-
-  public void addCloseWindowListener( CloseWindowListener listener ) {  }
-
   /**
    * Adds the listener to the collection of listeners who will be
    * notified when the current location has changed or is about to change.
