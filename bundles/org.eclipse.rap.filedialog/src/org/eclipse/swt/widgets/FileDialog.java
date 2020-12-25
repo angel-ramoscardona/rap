@@ -82,7 +82,7 @@ import org.eclipse.swt.layout.GridLayout;
  *      information</a>
  */
 @SuppressWarnings( "restriction" )
-public class UploadDialog extends Dialog implements IFileDialog {
+public class FileDialog extends Dialog {
 
   private static final String[] EMPTY_ARRAY = new String[ 0 ];
 
@@ -113,7 +113,7 @@ public class UploadDialog extends Dialog implements IFileDialog {
    *              subclass</li>
    *              </ul>
    */
-  public UploadDialog( Shell parent ) {
+  public FileDialog( Shell parent ) {
     this( parent, SWT.TITLE | SWT.BORDER | SWT.APPLICATION_MODAL );
   }
 
@@ -141,7 +141,7 @@ public class UploadDialog extends Dialog implements IFileDialog {
    *              subclass</li>
    *              </ul>
    */
-  public UploadDialog( Shell parent, int style ) {
+  public FileDialog( Shell parent, int style ) {
     super( parent, checkStyle( parent, style ) );
     checkSubclass();
     pushSession = new ServerPushSession();
@@ -684,22 +684,7 @@ public class UploadDialog extends Dialog implements IFileDialog {
         setButtonEnabled( true );
       }
     }
-  }
 
-  public String getFilterPath() {
-    return "";
-  }
-
-  public void setFilterPath( String filterPath ) {
-    return;
-  }
-
-  public void setFilterNames( String[] filterNames ) {
-    return;
-  }
-
-  public void setFileName( String fileName ) {
-    return;
   }
 
 }
