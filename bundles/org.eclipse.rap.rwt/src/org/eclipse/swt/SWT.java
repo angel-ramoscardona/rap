@@ -50,6 +50,8 @@ public class SWT {
    * The null event type (value is 0).
    */
   public static final int None = 0;
+  public static final int EraseItem = 40;
+  public static final int PaintItem = 42;
 
   /**
    * The key down event type (value is 1).
